@@ -1,3 +1,0 @@
-abcdddd
-
-test merge
