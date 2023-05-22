@@ -1,19 +1,25 @@
 document.getElementById("btnluas")
-    .addEventListener("click");
+    .addEventListener("click", tampil_luas);
+
 document.getElementById("btnkeliling")
-    .addEventListener("click");
+    .addEventListener("click", tampil_keliling);
+
 document.getElementById("hitung_luas")
     .addEventListener("click", persegi_luas);
+
 document.getElementById("hitung_keliling")
     .addEventListener("click", persegi_keliling);
+
+document.getElementsByClassName("btnReset")[0]
+    .addEventListener("click", reset);
+
+document.getElementsByClassName("btnReset")[1]
+    .addEventListener("click", reset);
 
 function number(evt) {
    var charCode = (evt.which) ? evt.which :
     event.keycode
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) 
-
-    return false;
-    return true;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;
 }
 
 function persegi_luas() {
@@ -46,4 +52,16 @@ function tampil_luas() {
 
 function tampil_keliling() {
     
+}
+
+function reset() {
+
+    document.getElementById("sisi-luas").value = null;
+    document.getElementById("sisi-keliling").value = null;
+    document.getElementById("rumus-luas").innerHTML = null;
+    document.getElementById("output-sisi-luas").innerHTML = null;
+    document.getElementById("persegi-luas").innerHTML = null;
+    document.getElementById("rumus-keliling").innerHTML = null;
+    document.getElementById("output-sisi-keliling").innerHTML = null;
+    document.getElementById("persegi-keliling").innerHTML = null;
 }
