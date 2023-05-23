@@ -4,10 +4,10 @@ body {
 }
 
 header {
+    position: absolute;
     background-color: #0000ffb8;
     text-align: center;
     width: 100%;
-    position: absolute;
 }
 
 .title {
