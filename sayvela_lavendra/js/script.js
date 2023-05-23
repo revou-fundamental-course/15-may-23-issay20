@@ -25,6 +25,7 @@ function showBox(type) {
         case "keliling":
             document.getElementById('keliling').setAttribute("style", "display: block;");
             document.getElementById('luas').setAttribute("style", "display: none;");
+            break;
         default:            
             break;
     }
