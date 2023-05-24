@@ -1,14 +1,14 @@
 document.getElementById("btnluas")
-    .addEventListener("click", function() { showBox("luas") });
+    .addEventListener("click", () => showBox("luas")); // menggunakan => (arrow function) agar lebih singkat
 
 document.getElementById("btnkeliling")
-    .addEventListener("click", function() { showBox("keliling") });
+    .addEventListener("click", () => showBox("keliling"));
 
 document.getElementById("hitung_luas")
-    .addEventListener("click", function() { hitung("luas") });
+    .addEventListener("click", () => hitung("luas"));
 
 document.getElementById("hitung_keliling")
-    .addEventListener("click", function() { hitung("keliling") });
+    .addEventListener("click", () => hitung("keliling"));
 
 document.getElementsByClassName("btnReset")[0]
     .addEventListener("click", reset);
