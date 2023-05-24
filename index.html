@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Course KATIK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <span class="title">Katik</span> <span class="subtitle">Kalkulator Matematik</span>
+    </header>
+    <main>
+        <div class="card">
+            <div class="introduct">
+                <h2>Welcome to Katik</h2>
+                <p>Hai Sobat, Selamat datang di Katik.</p>
+                <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
+                <button id="btnluas">Luas Persegi</button>
+                <button id="btnkeliling">Keliling Persegi</button>
+            </div>
+            <br>
+            <div class="flex-container">
+                <div id="luas" class="description">
+                    <h3>Luas Persegi</h3>
+                    <img src="asset/persegi.png" alt="">
+                    <p>Rumus Luas Persegi yaitu :</p>
+                    <p>L = S x S</p>
+                    <p>Di mana :</p>
+                    <p>L = Luas</p>
+                    <p>S = Sisi</p>
+                    <hr>
+                    <h4>Hitung Luas Persegi</h4>
+                    <input id="sisi-luas" name="sisi-luas" onkeypress="return number(event)" required>
+                    <p id="rumus-luas"></p>
+                    <p id="output-sisi-luas"></p>
+                    <p id="persegi-luas"></p>
+                    <button class="hitung" id="hitung_luas" name="hitung_luas">Hitung</button>
+                    <button class="btnReset" id="reset_luas" name="reset">Reset</button>
+                </div>
+                <div id="keliling" class="description">
+                    <h3>keliling Persegi</h3>
+                    <img src="asset/persegi.png" alt="">
+                    <p>Rumus keliling Persegi yaitu :</p>
+                    <p>K = 4 x S</p>
+                    <p>Di mana :</p>
+                    <p>K = Keliling</p>
+                    <p>S = Sisi</p>
+                    <hr>
+                    <h4>Hitung Keliling Persegi</h4>
+                    <input id="sisi-keliling" name="sisi-keliling" onkeypress="return number(event)" required>
+                    <p id="rumus-keliling"></p>
+                    <p id="output-sisi-keliling"></p>
+                    <p id="persegi-keliling"></p>
+                    <button class="hitung" id="hitung_keliling" name="hitung-keliling">Hitung</button>
+                    <button class="btnReset" id="reset_keliling" name="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Mini Course Project RevoU Fundamental Course</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
