@@ -16,6 +16,7 @@ document.getElementsByClassName("btnReset")[0]
 document.getElementsByClassName("btnReset")[1]
     .addEventListener("click", reset);
 
+// function button luas dan button keliling untuk menampilkan box hitung luas atau box hitung keliling
 function showBox(type) {
     switch (type) {
         case "luas":
@@ -31,12 +32,14 @@ function showBox(type) {
     }
 }
 
+// function menjadikan kolom input hanya dapat diisi angka
 function number(evt) {
    var charCode = (evt.which) ? evt.which :
     event.keycode
     if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;
 }
 
+// function pada button hitung untuk menghitung luas dan keliling persegi
 function hitung(type) {
     switch (type) {
         case "luas":    
@@ -67,6 +70,7 @@ function hitung(type) {
     }
 }
 
+// function pada button reset untuk menghapus input dan hasil
 function reset() {
 
     document.getElementById("sisi-luas").value = null;
